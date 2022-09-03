@@ -1,4 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* .................................. */
+.header{
+    background-color: #562EFF;
+}
+.img-title{
+    padding-right: 10px;
+    width: 5%;
+}
+.img-titles{
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    align-items: center;
+}
+/* .carousel{
+    width: 100%;
+  } */
+  .section-item{
+     width: 100%;
+     margin-top: 25px;
+  }
 /* ..........top player.............. */
 body{
     font-family: 'Poppins', sans-serif;
@@ -111,4 +132,45 @@ hr{
     background-color: rgb(232, 181, 162);
     border-radius: 7px;
     padding: 2px;
+}
+.blog:hover{
+    transform: scale(1.2) skew(0deg);
+    transition: transform 1s ease-in;
+}
+.course:hover{
+    transform: scale(1.2) skew(0deg);
+    transition: transform 1s ease-in;
+}
+/* ............mobile Devices........... */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs,.courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+    
+}
+/* ........Tablet devices........... */
+@media only screen and(man-width: 688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+.Footer-items{
+    background-color: midnightblue;
+    padding: 50px;
+    color: yellow;
+    text-align: center;
+    margin-top: 30px;
 }
